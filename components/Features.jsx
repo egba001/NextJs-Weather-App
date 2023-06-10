@@ -90,7 +90,7 @@ const Features = () => {
                         src={background}
                         alt="background"
                         fill
-                        className="object-cover rounded-lg"
+                        className="object-fit rounded-lg"
                     />
                     <div className="w-[80%] z-10 m-auto items-center h-full flex relative">
                         <form onSubmit={shortenURL} className='w-full absolute top-6 flex flex-col md:flex-row md:justify-between md:top-14 h-full'>
