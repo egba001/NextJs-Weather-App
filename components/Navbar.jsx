@@ -7,7 +7,7 @@ const Navbar = () => {
     const [visible, setVisibility] = useState(false);
 
     return (
-        <div className="flex mx-auto py-10 w-[90%] md:w-[70%] lg:max-w-[1500px]">
+        <div className="flex mx-auto py-10 w-[90%] md:w-[80%] lg:max-w-[1500px]">
             <div className="container mx-auto flex items-center w-full">
                 <div className="flex w-full items-center justify-between">
                     <div className="flex justify-between">
