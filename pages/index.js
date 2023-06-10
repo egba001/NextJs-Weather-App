@@ -1,10 +1,9 @@
 import { Poppins } from 'next/font/google'
-import { useState } from 'react';
-import Navbar from '../components/Navbar';
-import Header from '../components/Header';
-import Features from '../components/Features';
-import Boostlinks from '../components/Boostlinks';
-import Footer from '../components/Footer';
+import Navbar from '../components/Navbar.jsx';
+import Header from '../components/Header.jsx';
+import Features from '../components/Features.jsx';
+import Boostlinks from '../components/Boostlinks.jsx';
+import Footer from '../components/Footer.jsx';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ["400", "700"] })
 

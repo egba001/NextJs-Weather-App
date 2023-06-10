@@ -8,14 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        lblue: 'hsl(180, 66%, 49%)',
-        darkViolet: 'hsl(257, 27%, 26%)',
-        red: 'hsl(0, 87%, 67%)',
+        lblue: '#2acfcf',
+        darkViolet: '#3b3054',
+        red: '#f46262',
         gray : {
-          100: 'hsl(0, 0%, 75%)',
-          200: 'hsl(257, 7%, 63%)',
-          300: 'hsl(255, 11%, 22%)',
-          400: 'hsl(260, 8%, 14%)',
+          100: '#bfbfbf',
+          200: '#9e9aa7',
+          300: '#35323e',
+          400: '#232127',
         }
       }
     },
