@@ -4,7 +4,7 @@ import headerImage from '../assets/images/illustration-working.svg';
 const Header = () => {
 
     return (
-        <header className="w-[90%] md:w-[70%] lg:max-w-[1500px] mt-8 mx-auto pb-28">
+        <header className="w-[90%] md:w-[80%] lg:max-w-[1500px] mt-8 mx-auto pb-28">
             <div className="flex items-center justify-center max-w-full flex-col-reverse md:justify-between md:flex-row">
                 <div className="text-center md:text-start">
                     <h2 className="font-[700] text-4xl md:text-5xl mt-12 mb-6">More than just <br />shorter links</h2>
