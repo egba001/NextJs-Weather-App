@@ -1,6 +1,6 @@
 const Layout = ({ children }) => {
     return (
-        <div className="flex w-screen justify-center md:px-0 items-center">
+        <div className="flex w-screen justify-center items-center">
             {children}
         </div>
     )

@@ -7,11 +7,11 @@ import { UilInstagram } from '@iconscout/react-unicons'
 const Footer = () => {
     return (
         <footer className="bg-gray-400 text-white py-16">
-            <div className="flex justify-between w-[90%] md:w-[70%] lg:max-w-[1500px] mx-auto">
+            <div className="flex justify-between items-center space-y-16 flex-col md:flex-row w-[90%] md:w-[70%] lg:max-w-[1500px] mx-auto">
                 <div>
                     <Image src={logo} alt='logo illustration' width='100' height='100' />
                 </div>
-                <div className='flex space-x-20'>
+                <div className='flex md:space-x-12 flex-col md:flex-row items-center md:items-start justify-center space-y-16 md:space-y-0 lg:space-x-20'>
                    <div>
                        <h2 className='font-[700]'>Features</h2>
                        <nav className='mt-2'>

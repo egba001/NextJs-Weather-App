@@ -10,7 +10,7 @@ const poppins = Poppins({ subsets: ['latin'], weight: ["400", "700"] })
 export default function Home() {
 
   return (
-    <main className={`flex min-h-screen w-full justify-center ${poppins.className}`}>
+    <main className={`flex h-screen w-screen justify-center ${poppins.className}`}>
       <div className='w-full mx-auto'>
         <Navbar />
         <Header />

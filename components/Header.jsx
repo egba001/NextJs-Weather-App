@@ -12,7 +12,7 @@ const Header = () => {
                     <button className="bg-lblue py-2 px-6 text-white rounded-full font-[400]"><a href="#">Get Started</a></button>
                 </div>
                 <div className="">
-                    <Image src={headerImage} width={500} height={500} alt='Header illustration' />
+                    <Image src={headerImage} width={400} height={400} alt='Header illustration' />
                 </div>
             </div>
         </header>
