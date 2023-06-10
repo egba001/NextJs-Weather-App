@@ -1,6 +1,7 @@
 const { useState } = require("react");
 import Image from "next/image";
 import logo from '../assets/images/logo.svg';
+import { UilBars } from '@iconscout/react-unicons'
 
 const Navbar = () => {
 
@@ -21,7 +22,7 @@ const Navbar = () => {
                         </nav>
                     </div>
                 </div>
-            <div className="md:hidden">{visible ? <p>Open</p> : <p>Close</p>}</div>
+            <div className="md:hidden">{visible ? <p>Open</p> : <UilBars />}</div>
                <div className="hidden md:block">
                    <nav className="w-full">
                        <ul className="flex items-center space-x-6 text-sm">
