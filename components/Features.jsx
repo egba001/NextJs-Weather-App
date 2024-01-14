@@ -39,6 +39,22 @@ const Features = () => {
     // state to handle loading of shortened link
     const [loading, setLoading] = useState(false);
 
+    // Options for http request
+    const options = {
+        method: "POST",
+        url: "https://fast-url-shortener1.p.rapidapi.com/shorten",
+        headers: {
+            "content-type": "application/json",
+            "X-RapidAPI-Key":
+                "1361f3eefbmsh4f537c88625c682p146c3cjsn336cca1b54f1",
+            "X-RapidAPI-Host": "fast-url-shortener1.p.rapidapi.com",
+        },
+        data: {
+            url: link,
+        },
+    };
+
+
     // function to copy text to clipboard
     function copyTextToClipboard() {
         return navigator.clipboard.writeText(shortenedLink);
@@ -61,18 +77,19 @@ const Features = () => {
 
     // Function to post long url to shrtcode api
     const shortenURL = async (e) => {
+
+        
         e.preventDefault();
         setLoading(true)
         !link ? setError(true) : setError(false);
         if(!error) {
             try {
-              const response = await axios(
-                `https://api.shrtco.de/v2/shorten?url=${link}`
-              );
-              setShortenedLink(response.data.result.full_short_link);
+              const response = await axios.request(options)
+              setShortenedLink(response.data.shortened);
               setLoading(false);
             } catch (e) {
-              console.log(e);
+                setLoading(false);
+                console.log(e);
             }
         }
       };
